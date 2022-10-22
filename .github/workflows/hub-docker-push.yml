@@ -1,12 +1,12 @@
-name: Docker push
+name: Hub Docker push
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '15 15 * * *'
   push:
     branches: 
       - 'main'
-      - 'master'
 
 jobs:
   docker:
