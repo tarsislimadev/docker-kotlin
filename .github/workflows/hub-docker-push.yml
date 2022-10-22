@@ -28,7 +28,7 @@ jobs:
           password: ${{ secrets.GITHUBDOCKER }}
       -
         name: Build and Tag
-        run: sh build.sh 
+        run: sh env/build.sh 
       -
         name: Push
         run: docker push tmvdl/kotlin -a
