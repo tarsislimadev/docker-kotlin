@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+
+  latest:
+    image: tmvdl/kotlin:latest
+    build: './src/latest'
