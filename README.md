@@ -1,16 +1,18 @@
 # Docker Kotlin
 
-Imagem Docker para compilaçao de projetos Kotlin
+![https://img.shields.io/github/actions/workflow/status/brtmvdl/docker-kotlin/hub-docker-push.yml?style=for-the-badge](https://img.shields.io/github/actions/workflow/status/brtmvdl/docker-kotlin/hub-docker-push.yml?style=for-the-badge)
 
-Veja mais em [hub.docker.com/r/tmvdl/kotlin](https://hub.docker.com/r/tmvdl/kotlin)
+Docker image for Kotlin projects
 
-## Como usar
+See more [hub.docker.com/r/tmvdl/kotlin](https://hub.docker.com/r/tmvdl/kotlin)
 
-Instalar o [Docker](https://docs.docker.com/engine/install/).
+## How to
 
-### Uso 1
+Install [Docker](https://docs.docker.com/engine/install/).
 
-1. Criar um arquivo `docker-compose.yaml` na raiz do projeto com a imagem [tmvdl/kotlin](https://hub.docker.com/r/tmvdl/kotlin).
+### At Docker Compose
+
+Create a `docker-compose.yaml` file with [tmvdl/kotlin](https://hub.docker.com/r/tmvdl/kotlin).
 
 ```yaml
 # docker-compose.yaml
@@ -23,13 +25,13 @@ services:
       - .:/app
 ```
 
-2. Subir o container para a construção do build
+Up the project
 
 ```bash
-docker-compose up --build
+docker-compose up
 ```
 
-### Uso 2
+### At Docker (only)
 
 1. Executar como container do Docker
 
