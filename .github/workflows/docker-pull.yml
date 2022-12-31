@@ -3,10 +3,7 @@ name: Docker pull
 on:
   workflow_dispatch:
   schedule:
-    - cron: '35 * * * *'
-  push:
-    branches: 
-      - 'main'
+    - cron: '50 * * * *'
 
 jobs:
   docker:
