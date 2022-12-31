@@ -9,8 +9,7 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
+      - name: Check out
         uses: actions/checkout@v2
-      -
-        name: Push
+      - name: Docker pull
         run: docker pull tmvdl/kotlin -a
