@@ -1,40 +1,36 @@
-# Docker Kotlin
+# Quick reference
 
-Imagem Docker para compilaçao de projetos Kotlin
+Maintained by:
+[github.com/brtmvdl](https://github.com/brtmvdl)
 
-Veja mais em [github.com/tmvdl/docker-kotlin](https://github.com/tmvdl/docker-kotlin)
+Where to get help:
+[brtmvdl/docker-kotlin](https://github.com/brtmvdl/docker-kotlin)
 
-## Como usar
+## Supported tags and respective Dockerfile links
 
-Instalar o [Docker](https://docs.docker.com/engine/install/).
+* [latest](), [latest-202212]()
 
-### Uso 1
+## Quick reference (cont.)
 
-1. Criar um arquivo `docker-compose.yaml` na raiz do projeto com a imagem [tmvdl/kotlin](https://hub.docker.com/r/tmvdl/kotlin).
+Where to file issues:
+[github.com/brtmvdl/docker-kotlin/issues](https://github.com/brtmvdl/docker-kotlin/issues)
 
-```yaml
-# docker-compose.yaml
-version: '3'
+## What is Kotlin?
 
-services:
-  app:
-    image: tmvdl/kotlin
-    volumes:
-      - .:/app
-```
+Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin's standard library depends on the Java Class Library, but type inference allows its syntax to be more concise.
 
-2. Subir o container para a construção do build
+# How to use this image
 
-```bash
-docker-compose up --build
-```
+```Dockerfile
+FROM tmvdl/kotlin
 
-### Uso 2
+WORKDIR /usr/src/app
 
-1. Executar como container do Docker
+COPY . .
 
-```sh
-docker run --name kotlinjs tmvdl/kotlin
+# RUN javac Main.java
+
+CMD ["java", "Main"]
 ```
 
 ## License
