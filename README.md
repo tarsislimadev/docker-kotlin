@@ -1,6 +1,6 @@
 # Docker Kotlin
 
-![https://img.shields.io/github/actions/workflow/status/brtmvdl/docker-kotlin/hub-docker-push.yml?style=for-the-badge](https://img.shields.io/github/actions/workflow/status/brtmvdl/docker-kotlin/hub-docker-push.yml?style=for-the-badge)
+[![github/actions/workflow/status](https://img.shields.io/github/actions/workflow/status/brtmvdl/docker-kotlin/docker-push.yml)](https://img.shields.io/github/actions/workflow/status/brtmvdl/docker-kotlin/docker-push.yml) [![github/license](https://img.shields.io/github/license/brtmvdl/docker-kotlin)](https://img.shields.io/github/license/brtmvdl/docker-kotlin) [![github/stars](https://img.shields.io/github/stars/brtmvdl/docker-kotlin?style=social)](https://img.shields.io/github/stars/brtmvdl/antify?style=social)
 
 Docker image for Kotlin projects
 
