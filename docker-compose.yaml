@@ -5,3 +5,11 @@ services:
   latest:
     image: tmvdl/kotlin:latest
     build: './src/latest'
+
+  sample:
+    image: tmvdl/kotlin:sample
+    build: './sample'
+    volumes:
+      - './sample:/usr/src/app'
+    ports:
+      - '80:80'
